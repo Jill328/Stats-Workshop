@@ -3,15 +3,26 @@
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
-  // TODO
+  // for loop
+  return numbers.length;
 }
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the sum of the numbers
  */
+//*[1, 2, 3, 4] 
+
+
 function getSum(numbers) {
-  // TODO
+  // for loop
+  let sum =0
+  for(let i=0; i<numbers.length; i++){
+  //keeping in mind that i will be 0, then 1, then 2, then 3 and so on
+  sum = sum + numbers[i]
+   //add each number of the array to the sum
+  }
+  return sum
 }
 
 /**
@@ -19,7 +30,9 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  // TODO
+  // TODO- sum/length
+   if(numbers.length === 0) return 0;
+   return getSum(numbers) / getLength(numbers);
 }
 
 /**
@@ -28,6 +41,7 @@ function getMean(numbers) {
  */
 function getMin(numbers) {
   // TODO
+  return Math.min(...numbers);
 }
 
 /**
@@ -36,6 +50,7 @@ function getMin(numbers) {
  */
 function getMax(numbers) {
   // TODO
+  return Math.max(...numbers);
 }
 
 /**
@@ -43,7 +58,8 @@ function getMax(numbers) {
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  // TODO
+  // getMax-getMin
+  return getMax(numbers) - getMin(numbers);
 }
 
 /**
@@ -51,7 +67,14 @@ function getRange(numbers) {
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  // TODO
+  const evenNums=[]
+  for(let i=0; i<number.length;[i]/2===0){
+
+  }
+  // create a for loop that puts even numbers in a new array
+ 
+
+  return evenNums
 }
 
 /**
@@ -60,6 +83,7 @@ function getEvens(numbers) {
  */
 function getOdds(numbers) {
   // TODO
+
 }
 
 // === READ BUT DO NOT EDIT THE CODE BELOW ===
@@ -99,7 +123,7 @@ function describeNumbers(numbers) {
 
 const userInputString = prompt(
   "Please enter some integers separated by commas.",
-  "28,-15,30,975,400"
+  "1,2,3,4,5"
 );
 const numbers = convertStringToNumbers(userInputString);
 describeNumbers(numbers);

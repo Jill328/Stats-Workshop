@@ -1,0 +1,32 @@
+An Array- used to store multiples values in a single varaible, instead of declaraing seperate variables for each value (cuts down on writing code)
+Brackets, [], are used to define the varaible type.
+  String[] instruments;
+  String [] instruments= {"trombone", "trumpet", "bass"};
+  int[] myNum = {0, 1, 2, 3, 4,}
+Index- used to refer to array element [0]=1st; [1]=2nd;
+Array Length: how many elements an array has (instruments.length)
+ 
+Loops-a code structure that allows you to do something very similiar repeatedly.
+
+     a. for - loops through a block of code a number of times
+     b. for/in - loops through the properties of an object
+     c. for/of - loops through the values of an iterable object
+     d. while - loops through a block of code while a specified condition is true
+     e. do/while - also loops through a block of code while a specified condition is true
+     f. break and continue: exits the loop entirely (bk); skips the current iteration and moves to the next (continues).
+     
+
+
+//*For Loops-
+//*A for loop repeats  until a sprcified condion evaluates to false. actions that happens for as many times a loop runs until the condition is met
+ // It includes
+       for (initializer; condition; iterator/afterthought) {
+       //Statement - What should happen FOR every loop
+       // };
+    //initializer= let statement (runs before the code block)
+    // condition = < , > (true; false)(usually use less than)(evaluated before code block runs; if true, the loop runs, if false loop stops)
+    // iterator/afterthought = how we are going to change our initializer); example: ++1; gets looked at after everytime our code block runs until the condition is met. In charge of changing the initializer).
+    //Statement: what we want to happen everytime this code runs.
+
+ //*While loops- used for while something is happpening
+    // where the iterator is placed in the code makes a difference
